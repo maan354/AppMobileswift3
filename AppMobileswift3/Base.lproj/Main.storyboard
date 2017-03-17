@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xnb-1S-cQc">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -196,6 +196,7 @@
                             <constraint firstItem="m1R-uD-lG4" firstAttribute="trailing" secondItem="suh-zX-Zl8" secondAttribute="trailing" id="yk5-x2-gsf"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="pBC-yc-BEe"/>
                     <connections>
                         <outlet property="statesPicker" destination="ReJ-6j-PZa" id="j9G-6L-M5d"/>
                         <outlet property="statesPickerBtn" destination="kq1-XZ-drd" id="hAv-oA-peM"/>
@@ -203,10 +204,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1238" y="-223"/>
+        </scene>
+        <!--Scrool Page View Controller-->
+        <scene sceneID="aR1-zK-fYx">
+            <objects>
+                <viewController storyboardIdentifier="ScroolPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0U8-7o-bmx" customClass="ScroolPageViewController" customModule="AppMobileswift3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3yu-ao-q6o"/>
+                        <viewControllerLayoutGuide type="bottom" id="0CJ-1k-hHx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="de5-ZV-PKk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="Njq-FP-x4O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="hap-P1-s3V">
+                                <rect key="frame" x="283" y="20" width="111" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="IFp-o3-kE7"/>
+                                    <constraint firstAttribute="height" constant="115" id="mVm-0c-lR8"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHO-SR-5E9">
+                                <rect key="frame" x="57" y="0.0" width="300" height="687"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="687" id="IKD-Hg-Eek"/>
+                                    <constraint firstAttribute="width" constant="300" id="T1x-rV-UMo"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="YhJ-5E-rMx">
+                                <rect key="frame" x="0.0" y="539" width="414" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Xxk-dV-sC2"/>
+                                    <constraint firstAttribute="height" constant="148" id="eKw-u1-IMs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0CJ-1k-hHx" firstAttribute="top" secondItem="nHO-SR-5E9" secondAttribute="bottom" id="2p7-fh-H7O"/>
+                            <constraint firstItem="hap-P1-s3V" firstAttribute="trailing" secondItem="de5-ZV-PKk" secondAttribute="trailingMargin" id="8hA-ao-EMG"/>
+                            <constraint firstAttribute="trailing" secondItem="Njq-FP-x4O" secondAttribute="trailing" id="Ei7-dg-iCy"/>
+                            <constraint firstItem="nHO-SR-5E9" firstAttribute="top" secondItem="de5-ZV-PKk" secondAttribute="topMargin" id="I2V-gm-vON"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nHO-SR-5E9" secondAttribute="trailing" constant="37" id="KfE-ro-c5N"/>
+                            <constraint firstItem="0CJ-1k-hHx" firstAttribute="top" secondItem="YhJ-5E-rMx" secondAttribute="bottom" id="RR9-Em-3s6"/>
+                            <constraint firstItem="YhJ-5E-rMx" firstAttribute="leading" secondItem="de5-ZV-PKk" secondAttribute="leading" id="WWe-Cn-mxL"/>
+                            <constraint firstAttribute="trailing" secondItem="YhJ-5E-rMx" secondAttribute="trailing" id="fJF-M4-5KI"/>
+                            <constraint firstItem="0CJ-1k-hHx" firstAttribute="top" secondItem="Njq-FP-x4O" secondAttribute="bottom" id="i99-tT-X8Z"/>
+                            <constraint firstItem="Njq-FP-x4O" firstAttribute="top" secondItem="de5-ZV-PKk" secondAttribute="top" id="nS6-WG-M4z"/>
+                            <constraint firstItem="hap-P1-s3V" firstAttribute="top" secondItem="3yu-ao-q6o" secondAttribute="bottom" id="wBs-GA-amK"/>
+                            <constraint firstItem="Njq-FP-x4O" firstAttribute="leading" secondItem="de5-ZV-PKk" secondAttribute="leading" id="zTf-SZ-4ET"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="kN7-xo-mqI"/>
+                    <connections>
+                        <outlet property="PageScrollView" destination="nHO-SR-5E9" id="pvU-ep-fam"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpn-Qh-B4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182.608695652174" y="493.20652173913049"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nZI-rM-Ccl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Xnb-1S-cQc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="DbR-Gx-l0z">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c0o-9Y-3ie"/>
+                        <segue destination="0U8-7o-bmx" kind="relationship" relationship="viewControllers" id="uQJ-GF-BsB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEC-u8-COM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="113.04347826086958" y="121.46739130434784"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Mountains" width="375" height="100"/>
+        <image name="Sky" width="375" height="667"/>
+        <image name="Sun" width="53" height="53"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
     </resources>
 </document>

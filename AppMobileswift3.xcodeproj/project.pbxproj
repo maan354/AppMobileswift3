@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44B9ADD1E7C1B8E007BE7F7 /* ScroolPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44B9ADC1E7C1B8E007BE7F7 /* ScroolPageViewController.swift */; };
 		C4EF04ED1E7AF693001B20B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF04EC1E7AF693001B20B1 /* AppDelegate.swift */; };
 		C4EF04EF1E7AF693001B20B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF04EE1E7AF693001B20B1 /* ViewController.swift */; };
 		C4EF04F21E7AF693001B20B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EF04F01E7AF693001B20B1 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C44B9ADC1E7C1B8E007BE7F7 /* ScroolPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScroolPageViewController.swift; sourceTree = "<group>"; };
 		C4EF04E91E7AF693001B20B1 /* AppMobileswift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMobileswift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EF04EC1E7AF693001B20B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4EF04EE1E7AF693001B20B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				C4EF04EC1E7AF693001B20B1 /* AppDelegate.swift */,
 				C4EF04EE1E7AF693001B20B1 /* ViewController.swift */,
+				C44B9ADC1E7C1B8E007BE7F7 /* ScroolPageViewController.swift */,
 				C4EF04F01E7AF693001B20B1 /* Main.storyboard */,
 				C4EF04F31E7AF693001B20B1 /* Assets.xcassets */,
 				C4EF04F51E7AF693001B20B1 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				C4EF04EF1E7AF693001B20B1 /* ViewController.swift in Sources */,
 				C4EF04ED1E7AF693001B20B1 /* AppDelegate.swift in Sources */,
+				C44B9ADD1E7C1B8E007BE7F7 /* ScroolPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +516,7 @@
 				C4EF05131E7AF693001B20B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4EF05141E7AF693001B20B1 /* Build configuration list for PBXNativeTarget "AppMobileswift3Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				C4EF05161E7AF693001B20B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4EF05171E7AF693001B20B1 /* Build configuration list for PBXNativeTarget "AppMobileswift3UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				C4EF05191E7AF693001B20B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
